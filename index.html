@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Rodrigues | University Projects</title>
+    <meta
+      name="description"
+      content="Portfolio page for Daniel Rodrigues featuring university projects in software security and secure systems."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar">
+        <p class="brand">Daniel Rodrigues</p>
+        <div class="links">
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Master's Student in Computer Science and Engineering</p>
+        <h1>Selected university projects in cybersecurity, secure systems, and applied software engineering.</h1>
+        <p class="lead">
+          I am currently specializing in cybersecurity and artificial intelligence at Instituto Superior
+          Tecnico. This page highlights projects where I worked on static analysis, applied cryptography,
+          secure APIs, and system design.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View projects</a>
+          <a class="button button-secondary" href="mailto:daniel.rodriguespinto03@gmail.com">Email me</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section intro">
+        <div class="section-heading">
+          <p class="section-label">Focus Areas</p>
+          <h2>What I want this page to show</h2>
+        </div>
+        <div class="pill-row">
+          <span class="pill">Cybersecurity</span>
+          <span class="pill">Static analysis</span>
+          <span class="pill">Applied cryptography</span>
+          <span class="pill">Secure APIs</span>
+          <span class="pill">Systems design</span>
+          <span class="pill">Technical documentation</span>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="section-label">Selected Projects</p>
+          <h2>Most relevant work</h2>
+        </div>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-tag">Software Security</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">AST Analysis</span>
+          </div>
+          <h3>Static Analyzer for Python Web Vulnerabilities</h3>
+          <p>
+            Developed a Python-based static analysis tool that inspects program slices and flags insecure
+            data flows from untrusted sources to sensitive sinks. The analyzer models explicit and implicit
+            flows, tracks sanitization, and produces structured JSON reports for vulnerability findings.
+          </p>
+          <div class="project-grid">
+            <div>
+              <h4>Highlights</h4>
+              <ul>
+                <li>Implemented analysis over Python ASTs to reason about sources, sinks, and sanitizers.</li>
+                <li>Supported multiple vulnerability patterns including XSS, SQL injection, SSRF, and path traversal.</li>
+                <li>Handled explicit and implicit information flows with deterministic output formatting.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Tech stack</h4>
+              <ul>
+                <li>Python</li>
+                <li>AST parsing</li>
+                <li>JSON-based vulnerability patterns</li>
+                <li>Static program analysis</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-tag">SIRS</span>
+            <span class="project-tag">FastAPI</span>
+            <span class="project-tag">Java Crypto</span>
+          </div>
+          <h3>ChainOfProduct Secure Document Platform</h3>
+          <p>
+            Built a multi-service secure document platform for controlled disclosure of transaction data
+            across organizations. The system combines a FastAPI application, a Java cryptographic library,
+            PostgreSQL, Nginx, a certificate authority service, and a group-management server in a segmented
+            virtualized infrastructure.
+          </p>
+          <div class="project-grid">
+            <div>
+              <h4>Highlights</h4>
+              <ul>
+                <li>Implemented document protection with AES-GCM, RSA-OAEP, and RSASSA-PSS.</li>
+                <li>Designed auditable sharing workflows with certificate-based identity validation.</li>
+                <li>Secured communication channels with TLS and isolated services across multiple virtual machines.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Tech stack</h4>
+              <ul>
+                <li>Python / FastAPI</li>
+                <li>Java / Maven</li>
+                <li>PostgreSQL</li>
+                <li>Nginx, TLS, PKI, VirtualBox</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-heading">
+          <p class="section-label">Next Step</p>
+          <h2>Publish and connect it to your resume</h2>
+        </div>
+        <div class="contact-card">
+          <p>
+            This is ready to be published as a GitHub Pages site. Before uploading, you should replace the
+            placeholder text in the README with your final GitHub repository URLs and, if you want, add
+            screenshots or a short "what I contributed" note for each project.
+          </p>
+          <a class="button button-primary" href="README.md">Open publishing guide</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

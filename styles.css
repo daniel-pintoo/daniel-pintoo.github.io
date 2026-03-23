@@ -1,0 +1,247 @@
+:root {
+  --bg: #0a1220;
+  --bg-soft: #101c31;
+  --panel: rgba(16, 28, 49, 0.74);
+  --panel-strong: rgba(12, 22, 39, 0.92);
+  --text: #ecf2ff;
+  --muted: #a7b4d1;
+  --line: rgba(170, 192, 255, 0.18);
+  --accent: #7be0c5;
+  --accent-strong: #58d4f9;
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(88, 212, 249, 0.22), transparent 32%),
+    radial-gradient(circle at top right, rgba(123, 224, 197, 0.18), transparent 28%),
+    linear-gradient(180deg, #08101d 0%, #0a1220 42%, #09111c 100%);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero,
+.section {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 1.5rem 0 4rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.brand {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  color: var(--muted);
+}
+
+.hero-content {
+  max-width: 860px;
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(14, 24, 41, 0.85), rgba(10, 18, 32, 0.95));
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.eyebrow,
+.section-label,
+.project-tag {
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.eyebrow,
+.section-label {
+  color: var(--accent);
+  font-size: 0.84rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: clamp(1.7rem, 3vw, 2.7rem);
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+  margin-bottom: 0.75rem;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+}
+
+.lead {
+  max-width: 760px;
+  font-size: 1.08rem;
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.75rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+  color: #08101d;
+}
+
+.button-secondary {
+  border-color: var(--line);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.section {
+  padding: 1rem 0 3rem;
+}
+
+.section-heading {
+  margin-bottom: 1.4rem;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.pill {
+  padding: 0.65rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.project-card,
+.contact-card {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 1.6rem;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.project-card + .project-card {
+  margin-top: 1.2rem;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.project-tag {
+  color: var(--accent);
+  font-size: 0.75rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.3rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+p {
+  color: var(--muted);
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--panel-strong);
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content,
+  .project-card,
+  .contact-card {
+    padding: 1.2rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
