@@ -164,20 +164,6 @@ h4 {
   margin-bottom: 1.4rem;
 }
 
-.pill-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-}
-
-.pill {
-  padding: 0.65rem 0.9rem;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  color: var(--muted);
-  background: rgba(255, 255, 255, 0.03);
-}
-
 .project-card,
 .contact-card {
   border: 1px solid var(--line);
@@ -232,13 +218,6 @@ h4 {
   height: auto;
 }
 
-.project-figure figcaption {
-  padding: 0.8rem 1rem;
-  font-size: 0.92rem;
-  color: var(--muted);
-  border-top: 1px solid var(--line);
-}
-
 .project-actions {
   display: flex;
   flex-wrap: wrap;
@@ -269,7 +248,6 @@ p {
   gap: 1rem;
 }
 
-.contact-link,
 .contact-item {
   display: flex;
   flex-direction: column;
@@ -278,13 +256,6 @@ p {
   border: 1px solid var(--line);
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.03);
-  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
-}
-
-.contact-link:hover {
-  transform: translateY(-1px);
-  border-color: rgba(123, 224, 197, 0.45);
-  background: rgba(255, 255, 255, 0.05);
 }
 
 .contact-label {
@@ -295,7 +266,6 @@ p {
   color: var(--accent);
 }
 
-.contact-link strong,
 .contact-item strong {
   color: var(--text);
   font-size: 1rem;
