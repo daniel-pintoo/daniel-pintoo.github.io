@@ -21,7 +21,9 @@
       }
 
       window.addEventListener("load", function () {
-        window.scrollTo(0, 0);
+        requestAnimationFrame(function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
       });
     </script>
   </head>
