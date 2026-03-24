@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Rodrigues | Projetos Universitarios</title>
+    <meta
+      name="description"
+      content="Pagina de portfolio de Daniel Rodrigues com projetos universitarios em seguranca de software e sistemas seguros."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      window.addEventListener("load", function () {
+        requestAnimationFrame(function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar">
+        <p class="brand">Daniel Rodrigues</p>
+        <div class="topbar-actions">
+          <div class="links">
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contacto</a>
+          </div>
+          <div class="language-toggle" aria-label="Selecao de idioma">
+            <a href="../" lang="en">EN</a>
+            <a class="active" href="index.html" lang="pt-PT">PT</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Mestrando em Engenharia Informatica e de Computadores | Ciberseguranca e IA</p>
+        <h1>Projetos universitarios focados em seguranca, sistemas e redes.</h1>
+        <p class="lead">
+          Estou atualmente a especializar-me em ciberseguranca e inteligencia artificial no Instituto
+          Superior Tecnico. Esta pagina destaca projetos universitarios em que trabalhei em analise
+          estatica, criptografia aplicada e APIs seguras, desenhei infraestruturas seguras e implementei
+          documentacao tecnica.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Ver projetos</a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/daniel-rodrigues-4a009626b" target="_blank" rel="noreferrer">Perfil de LinkedIn</a>
+          <a class="button button-secondary" href="https://github.com/daniel-pintoo" target="_blank" rel="noreferrer">Perfil de GitHub</a>
+          <a class="button button-secondary" href="mailto:daniel.rodriguespinto03@gmail.com">Enviar email</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="section-label">Projetos em Destaque</p>
+          <h2>Trabalho mais relevante</h2>
+        </div>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-tag">Seguranca de Backend</span>
+            <span class="project-tag">Criptografia Aplicada</span>
+            <span class="project-tag">Infraestrutura</span>
+          </div>
+          <h3>ChainOfProduct Secure Document Platform</h3>
+          <p>
+            Desenvolvi uma plataforma segura multi-servico para divulgacao controlada de dados de
+            transacoes entre organizacoes. O sistema combina uma aplicacao FastAPI, uma biblioteca
+            criptografica em Java, PostgreSQL, um servico de autoridade certificadora e um servidor de
+            gestao de grupos numa infraestrutura segmentada e virtualizada.
+          </p>
+          <p class="project-note">
+            Projeto de grupo desenvolvido numa equipa de 3. Apesar de ter uma compreensao global do
+            projeto, a minha contribuicao incidiu no desenho e deployment da infraestrutura, integracao do
+            frontend, gestao da base de dados, modelacao da autoridade certificadora, configuracao de
+            firewalls e ligacoes seguras.
+          </p>
+          <figure class="project-figure">
+            <img
+              src="https://raw.githubusercontent.com/daniel-pintoo/network-and-computer-security/main/img/diagram.png"
+              alt="Diagrama da infraestrutura ChainOfProduct com cliente, aplicacao, base de dados, servidor de grupos e autoridade certificadora em redes segmentadas."
+            />
+          </figure>
+          <div class="project-grid">
+            <div>
+              <h4>Destaques</h4>
+              <ul>
+                <li>Implementei protecao de documentos com AES-GCM, RSA-OAEP e RSASSA-PSS.</li>
+                <li>Desenhei fluxos auditaveis de partilha com validacao de identidade baseada em certificados.</li>
+                <li>Protegi canais de comunicacao com TLS e isolei servicos em varias maquinas virtuais.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Tecnologias</h4>
+              <ul>
+                <li>Python / FastAPI</li>
+                <li>Java / Maven</li>
+                <li>PostgreSQL</li>
+                <li>Nginx, TLS, PKI, VirtualBox</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a
+              class="button button-primary"
+              href="https://github.com/daniel-pintoo/network-and-computer-security"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver codigo
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-tag">Forense Digital</span>
+            <span class="project-tag">Analise de Rede</span>
+            <span class="project-tag">Investigacao de Incidentes</span>
+          </div>
+          <h3>MEMELgate Digital Forensics Investigation</h3>
+          <p>
+            Realizei um projeto universitario de forense digital em tres etapas focado na investigacao de
+            uma campanha de phishing, recuperacao de artefactos ocultos, analise de imagens forenses de
+            disco e reconstrucao de exfiltracao de dados atraves de analise de trafego de rede.
+          </p>
+          <p class="project-note">
+            Projeto universitario de equipa desenvolvido ao longo de tres laboratorios progressivos, com
+            relatorios forenses, reconstrucao de timelines e justificacao tecnica baseada em evidencia.
+          </p>
+          <div class="project-grid">
+            <div>
+              <h4>Destaques</h4>
+              <ul>
+                <li>Recuperei artefactos suspeitos e ocultos a partir de ficheiros, websites e outra evidencia digital relacionada.</li>
+                <li>Analisei imagens forenses de disco para rastrear proveniencia de ficheiros, atividade de atacantes e comportamento anti-forense.</li>
+                <li>Investiguei capturas de rede e trafego HTTPS desencriptado para reconstruir eventos de exfiltracao e hipoteses de atribuicao.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Tecnologias</h4>
+              <ul>
+                <li>Kali Linux</li>
+                <li>Wireshark</li>
+                <li>FTK Imager</li>
+                <li>Forense de disco, sistema de ficheiros e rede</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-actions">
+            <span class="button button-secondary button-disabled">Repositorio em breve</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-tag">Seguranca de Software</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Analise Estatica</span>
+          </div>
+          <h3>Static Analyzer for Python Web Vulnerabilities</h3>
+          <p>
+            Desenvolvi uma ferramenta de analise estatica em Python que inspeciona fatias de programas e
+            sinaliza fluxos de dados inseguros desde fontes nao confiaveis ate sinks sensiveis. O analisador
+            modela fluxos explicitos e implicitos, acompanha sanitizacao e produz relatorios JSON
+            estruturados para vulnerabilidades encontradas.
+          </p>
+          <figure class="project-figure">
+            <img
+              src="https://raw.githubusercontent.com/daniel-pintoo/software-security/main/img/diagram2.png"
+              alt="Diagrama do projeto de seguranca de software mostrando o fluxo do analisador estatico e a estrutura JSON dos resultados."
+            />
+          </figure>
+          <div class="project-grid">
+            <div>
+              <h4>Destaques</h4>
+              <ul>
+                <li>Implementei analise sobre ASTs de Python para raciocinar sobre fontes, sinks e sanitizadores.</li>
+                <li>Suportei varios padroes de vulnerabilidade, incluindo XSS, SQL injection, SSRF e path traversal.</li>
+                <li>Tratei fluxos de informacao explicitos e implicitos com formatacao deterministica dos resultados.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Tecnologias</h4>
+              <ul>
+                <li>Python</li>
+                <li>Parsing de AST</li>
+                <li>Padroes de vulnerabilidade em JSON</li>
+                <li>Analise estatica de programas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a
+              class="button button-primary"
+              href="https://github.com/daniel-pintoo/software-security"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver codigo
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-heading">
+          <p class="section-label">Contacto</p>
+          <h2>Entrar em contacto</h2>
+        </div>
+        <div class="contact-card">
+          <p>
+            Se quiser saber mais sobre mim ou sobre estes projetos, discutir oportunidades de estagio, ou
+            falar sobre o meu trabalho em ciberseguranca e engenharia de software, sinta-se a vontade para
+            entrar em contacto.
+          </p>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <span class="contact-label">Email:</span>
+              <strong>daniel.rodriguespinto03@gmail.com</strong>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Telefone:</span>
+              <strong>934713435</strong>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">LinkedIn:</span>
+              <strong>linkedin.com/in/daniel-rodrigues-4a009626b</strong>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">GitHub:</span>
+              <strong>github.com/daniel-pintoo</strong>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a class="button button-primary" href="mailto:daniel.rodriguespinto03@gmail.com">Enviar email</a>
+            <a class="button button-secondary" href="tel:934713435">Ligar</a>
+            <a
+              class="button button-secondary"
+              href="https://www.linkedin.com/in/daniel-rodrigues-4a009626b"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Perfil de LinkedIn
+            </a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/daniel-pintoo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Perfil de GitHub
+            </a>
+          </div>
+          <p class="development-note">
+            Este portfolio continua em desenvolvimento, com mais elementos visuais e projetos a serem
+            adicionados em breve.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
