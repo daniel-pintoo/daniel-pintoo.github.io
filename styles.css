@@ -269,7 +269,8 @@ p {
   gap: 1rem;
 }
 
-.contact-link {
+.contact-link,
+.contact-item {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
@@ -294,7 +295,8 @@ p {
   color: var(--accent);
 }
 
-.contact-link strong {
+.contact-link strong,
+.contact-item strong {
   color: var(--text);
   font-size: 1rem;
   word-break: break-word;
