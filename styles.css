@@ -156,6 +156,12 @@ h4 {
   background: rgba(255, 255, 255, 0.02);
 }
 
+.button-disabled {
+  opacity: 0.72;
+  cursor: default;
+  pointer-events: none;
+}
+
 .section {
   padding: 1rem 0 3rem;
 }
