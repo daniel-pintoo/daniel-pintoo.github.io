@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Rodrigues | Projetos Universitários</title>
+    <title>Daniel Rodrigues | Projetos de Segurança</title>
     <meta
       name="description"
-      content="Pagina de portfólio de Daniel Rodrigues com projetos universitarios em seguranca de software e sistemas seguros."
+      content="Pagina de portfólio de Daniel Rodrigues com projetos pessoais e universitarios em seguranca de software, ciberseguranca e sistemas seguros."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,12 +45,12 @@
 
       <div class="hero-content">
         <p class="eyebrow">Mestrando em Engenharia Informática e de Computadores | Cibersegurança e IA</p>
-        <h1>Projetos universitários focados em segurança, redes e sistemas.</h1>
+        <h1>Projetos de engenharia focados em segurança, sistemas e IA.</h1>
         <p class="lead">
           Estou atualmente a especializar-me em cibersegurança e inteligência artificial no Instituto
-          Superior Técnico. Esta página destaca projetos universitários em que trabalhei com análise
-          estática de algoritmos, criptografia e APIs seguras, desenhei infraestruturas seguras e implementei
-          documentação técnica.
+          Superior Técnico. Esta página destaca projetos pessoais e universitários em que trabalhei com
+          análise estática, remediação segura de código assistida por IA, criptografia, APIs seguras,
+          desenho de infraestruturas e documentação técnica.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#projects">Ver projetos</a>
@@ -64,8 +64,63 @@
     <main>
       <section class="section" id="projects">
         <div class="section-heading">
-          <p class="section-label">Projetos em Destaque</p>
-          <h2>Projetos mais relevantes</h2>
+          <p class="section-label">Projetos Pessoais</p>
+          <h2>Trabalho independente</h2>
+        </div>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-tag">Segurança com IA    </span>
+            <span class="project-tag">Python    </span>
+            <span class="project-tag">Remediação de Código Seguro    </span>
+          </div>
+          <h3>Sistema de Remediação Segura de Código, Assistido por IA</h3>
+          <p>
+            Desenvolvi um sistema pessoal de remediação segura de código assistido por IA que deteta
+            vulnerabilidades em Python, gera correções com um LLM e valida cada alteração proposta ao
+            reexecutar um analisador estático determinístico. O sistema segue o princípio de não confiar
+            cegamente no output da IA: cada correção gerada tem de passar pela validação do analisador
+            antes de ser aceite.
+          </p>
+          <p class="project-note">
+            Este projeto reutiliza o analisador de vulnerabilidades em Python originalmente desenvolvido
+            num projeto universitário de segurança de software, expandindo-o para um fluxo autónomo de
+            remediação com prompt engineering, modo mock, scoring, relatórios e um endpoint FastAPI opcional.
+          </p>
+          <figure class="project-figure">
+            <img
+              src="https://daniel-pintoo.github.io/img/Remediation%20Pipeline.png"
+              alt="Pipeline de remediacao segura de codigo com IA mostrando codigo de entrada, scan inicial, relatorio de vulnerabilidades, remediacao por IA, correcao gerada, validacao e output final."
+            />
+          </figure>
+          <div class="project-grid">
+            <div>
+              <h4>Destaques</h4>
+              <ul>
+                <li>Combinei análise estática determinística com remediação de código baseada em LLM.</li>
+                <li>Implementei um ciclo iterativo de validação com um máximo de três tentativas de correção.</li>
+                <li>Adicionei modo offline, relatórios comparativos, métricas de severidade e outputs gerados.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Tecnologias</h4>
+              <ul>
+                <li>Python</li>
+                <li>Análise estática baseada em AST</li>
+                <li>API LLM compatível com OpenAI</li>
+                <li>FastAPI, relatórios JSON, prompt engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a class="button button-primary" href="https://github.com/daniel-pintoo/secure-code-remediation-system" target="_blank" rel="noreferrer">Ver repositório</a>
+            <a class="button button-secondary" href="#static-analyzer-project">Ver analisador base</a>
+          </div>
+        </article>
+
+        <div class="section-heading subsection-heading">
+          <p class="section-label">Projetos Universitários</p>
+          <h2>Projetos de disciplinas e equipas</h2>
         </div>
 
         <article class="project-card">
@@ -164,7 +219,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" id="static-analyzer-project">
           <div class="project-meta">
             <span class="project-tag">Segurança em Software   </span>
             <span class="project-tag">Python    </span>
