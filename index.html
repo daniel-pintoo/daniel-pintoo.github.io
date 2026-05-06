@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Rodrigues | University Projects</title>
+    <title>Daniel Rodrigues | Security Projects</title>
     <meta
       name="description"
-      content="Portfolio page for Daniel Rodrigues featuring university projects in software security and secure systems."
+      content="Portfolio page for Daniel Rodrigues featuring personal and university projects in software security, cybersecurity, and secure systems."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,11 +45,12 @@
 
       <div class="hero-content">
         <p class="eyebrow">Master's Student in Computer Science and Engineering | Cybersecurity and AI</p>
-        <h1>Security, systems, and network-focused university projects.</h1>
+        <h1>Security, systems, and AI-focused engineering projects.</h1>
         <p class="lead">
           I am currently specializing in cybersecurity and artificial intelligence at Instituto Superior
-          Tecnico. This page highlights university projects where I worked on static analysis, applied cryptography
-          and secure APIs, designed secure infrastructures and implemented technical documentation.
+          Tecnico. This page highlights personal and university projects where I worked on static analysis,
+          AI-assisted secure code remediation, applied cryptography, secure APIs, infrastructure design,
+          and technical documentation.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#projects">View projects</a>
@@ -63,8 +64,62 @@
     <main>
       <section class="section" id="projects">
         <div class="section-heading">
-          <p class="section-label">Selected Projects</p>
-          <h2>Most relevant work</h2>
+          <p class="section-label">Personal Projects</p>
+          <h2>Independent work</h2>
+        </div>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-tag">AI Security    </span>
+            <span class="project-tag">Python    </span>
+            <span class="project-tag">Secure Code Remediation    </span>
+          </div>
+          <h3>AI-Assisted Secure Code Remediation System</h3>
+          <p>
+            Built a personal AI-assisted secure code remediation system that detects Python vulnerabilities,
+            generates fixes with an LLM, and validates every proposed patch by re-running a deterministic
+            static analyzer. The system is designed around the principle of not trusting AI output blindly:
+            each generated fix must pass analyzer-backed validation before it is accepted.
+          </p>
+          <p class="project-note">
+            This project builds on the Python vulnerability analyzer originally developed as a university
+            software security project, extending it into an autonomous remediation workflow with prompt
+            engineering, mock mode, scoring, reports, and an optional FastAPI endpoint.
+          </p>
+          <figure class="project-figure">
+            <img
+              src="img/Remediation%20Pipeline.png"
+              alt="AI-assisted secure code remediation pipeline showing input code, baseline scan, vulnerability report, AI remediation, generated fix, validation, and final output."
+            />
+          </figure>
+          <div class="project-grid">
+            <div>
+              <h4>Highlights</h4>
+              <ul>
+                <li>Combined deterministic static analysis with LLM-based code remediation.</li>
+                <li>Implemented an iterative validation loop with a maximum of three remediation attempts.</li>
+                <li>Added offline mock mode, comparative reports, severity metrics, and generated outputs.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Tech stack</h4>
+              <ul>
+                <li>Python</li>
+                <li>AST-based static analysis</li>
+                <li>OpenAI-compatible LLM API</li>
+                <li>FastAPI, JSON reporting, prompt engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-actions">
+            <span class="button button-secondary button-disabled">Repository coming soon</span>
+            <a class="button button-secondary" href="#static-analyzer-project">See base python analyzer</a>
+          </div>
+        </article>
+
+        <div class="section-heading subsection-heading">
+          <p class="section-label">University Projects</p>
+          <h2>Coursework and team projects</h2>
         </div>
 
         <article class="project-card">
@@ -162,11 +217,11 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" id="static-analyzer-project">
           <div class="project-meta">
             <span class="project-tag">Software Security   </span>
             <span class="project-tag">Python    </span>
-            <span class="project-tag">Static Analysis   </span>
+            <span class="project-tag">Static Analysis </span>
           </div>
           <h3>Static Analyzer for Python Web Vulnerabilities</h3>
           <p>
